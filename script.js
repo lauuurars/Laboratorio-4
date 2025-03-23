@@ -9,6 +9,7 @@ document.getElementById("calcular").addEventListener("click", function() {
     let num1 = parseInt(op1);
     let num2 = parseInt(op2);
 
+    // verificar si los valores son números
     if (isNaN(op1) || isNaN(op2)) {
         resultado.textContent = "ERROR: Ingresa números válidos.";
         return;
