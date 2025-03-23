@@ -27,11 +27,11 @@ document.getElementById("calcular").addEventListener("click", function() {
         resultado.textContent = "Resultado: " + (num1 * num2);
     } else if (operador === "/") {
         if (num2 === 0) {
-            resultado.textContent = "ERROR: ¡No se puede dividir por cero!";
+            resultado.textContent = "ERROR: ¡No se puede dividir entre cero!";
         } else {
             resultado.textContent = "Resultado: " + (num1 / num2);
         }
     } else {
-        resultado.textContent = "ERROR: Operador No Válido!";
+        resultado.textContent = "ERROR: ¡Operador No Válido!";
     }
 });
