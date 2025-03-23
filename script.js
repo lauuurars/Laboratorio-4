@@ -11,6 +11,7 @@ document.getElementById("calcular").addEventListener("click", function() {
 
     if (isNaN(op1) || isNaN(op2)) {
         resultado.textContent = "ERROR: Ingresa números válidos.";
+        return;
     }
 
     // apartado de las operaciones
@@ -18,19 +19,19 @@ document.getElementById("calcular").addEventListener("click", function() {
         resultado.textContent = "Resultado: " + (num1 + num2);
     } else if (operador === "-") {
         resultado.textContent = "Resultado: " + (num1 - num2);
-    } else if (operador === "**") {
+    } else if (operador === "**"){
         resultado.textContent = "Resultado: " + (num1 ** num2);
-    } else if (operador === "%") {
+    } else if (operador === "%"){
         resultado.textContent = "Resultado: " + (num1 % num2);
     }else if (operador === "*") {
         resultado.textContent = "Resultado: " + (num1 * num2);
     } else if (operador === "/") {
         if (num2 === 0) {
-            resultado.textContent = "ERROR: ¡No se puede dividir entre cero!";
+            resultado.textContent = "ERROR: ¡No se puede dividir por cero!";
         } else {
             resultado.textContent = "Resultado: " + (num1 / num2);
         }
     } else {
-        resultado.textContent = "ERROR: ¡Operador No Válido!";
+        resultado.textContent = "ERROR: Operador No Válido!";
     }
 });
