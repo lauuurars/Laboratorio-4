@@ -1,0 +1,46 @@
+
+/*estilos generales*/
+
+.general{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+    }
+}
+
+/*estilos del formulario*/
+
+.input{
+    text-align: center;
+    margin: 15px;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 675px;
+    margin-right: 675px;
+}
+
+.linea{
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    width: 400px;
+    margin-left: 610px;
+}
+
+/*estilos caja del resultado*/
+
+.resultado{
+    text-align: center;
+    font-weight: 700;
+    background-color: gray;
+    color: white;
+    width: 100%;
+    padding: 30px;
+}
