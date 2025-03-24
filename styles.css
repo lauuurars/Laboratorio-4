@@ -42,6 +42,10 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #6d2d80cf;
+}
+
 .linea{
     border-bottom: 2px solid rgb(109, 106, 106);
     width: 100%;
