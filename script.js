@@ -12,8 +12,7 @@ document.getElementById("calcular").addEventListener("click", function() {
     // verificar si los valores son números
     if (isNaN(op1) || isNaN(op2)) {
         resultado.textContent = "ERROR: Ingresa números válidos.";
-        return;
-    }
+    } else {
 
     // apartado de las operaciones
     if (operador === "+") {
@@ -34,5 +33,7 @@ document.getElementById("calcular").addEventListener("click", function() {
         }
     } else {
         resultado.textContent = "ERROR: ¡Operador No Válido!";
-    }
+    }
+
+}
 });
